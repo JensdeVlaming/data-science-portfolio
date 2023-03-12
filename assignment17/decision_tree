@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<flipper_length_mm &le; 202.5<br/>squared_error = 665259.629<br/>samples = 233<br/>value = 4199.249>, fillcolor="#f2c09c"] ;
+1 [label=<bill_length_mm &le; 37.1<br/>squared_error = 177187.184<br/>samples = 137<br/>value = 3644.526>, fillcolor="#f7dac6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<flipper_length_mm &le; 181.5<br/>squared_error = 85673.077<br/>samples = 26<br/>value = 3300.0>, fillcolor="#fbebdf"] ;
+1 -> 2 ;
+3 [label=<squared_error = 625.0<br/>samples = 2<br/>value = 2875.0>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label=<squared_error = 76453.993<br/>samples = 24<br/>value = 3335.417>, fillcolor="#fae9dd"] ;
+2 -> 4 ;
+5 [label=<flipper_length_mm &le; 193.5<br/>squared_error = 164307.382<br/>samples = 111<br/>value = 3725.225>, fillcolor="#f7d7c0"] ;
+1 -> 5 ;
+6 [label=<squared_error = 155622.559<br/>samples = 64<br/>value = 3620.312>, fillcolor="#f8dcc7"] ;
+5 -> 6 ;
+7 [label=<squared_error = 140736.759<br/>samples = 47<br/>value = 3868.085>, fillcolor="#f5d0b5"] ;
+5 -> 7 ;
+8 [label=<flipper_length_mm &le; 212.5<br/>squared_error = 295952.081<br/>samples = 96<br/>value = 4990.885>, fillcolor="#ea9a61"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<bill_length_mm &le; 48.85<br/>squared_error = 137405.478<br/>samples = 36<br/>value = 4515.278>, fillcolor="#efb185"] ;
+8 -> 9 ;
+10 [label=<squared_error = 130805.963<br/>samples = 28<br/>value = 4579.464>, fillcolor="#eeae80"] ;
+9 -> 10 ;
+11 [label=<squared_error = 95615.234<br/>samples = 8<br/>value = 4290.625>, fillcolor="#f1bc95"] ;
+9 -> 11 ;
+12 [label=<bill_length_mm &le; 48.3<br/>squared_error = 173925.521<br/>samples = 60<br/>value = 5276.25>, fillcolor="#e78d4c"] ;
+8 -> 12 ;
+13 [label=<squared_error = 84036.99<br/>samples = 28<br/>value = 4989.286>, fillcolor="#ea9b61"] ;
+12 -> 13 ;
+14 [label=<squared_error = 117474.976<br/>samples = 32<br/>value = 5527.344>, fillcolor="#e58139"] ;
+12 -> 14 ;
+}
